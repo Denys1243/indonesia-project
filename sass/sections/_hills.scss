@@ -1,0 +1,59 @@
+/* hills */
+.hills {
+    background-image: url(../images/hill1.png ), url(../images/hill2.png);
+    background-position: left right;
+    padding-top: 249px;
+    padding-bottom: 256px;
+}
+
+.hills-title {
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: DM Sans;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 32px;
+    width: 614px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hills-text {
+    color: var(--paragraph-dark, #6F7787);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 155.556% */
+    letter-spacing: 0.5px;
+    width: 470px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hills-btn {
+    color: var(--neutral-white, #FFF);
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    border-radius: 122px;
+    background: #DD2242;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 36px;
+}

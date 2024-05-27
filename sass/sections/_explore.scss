@@ -1,0 +1,26 @@
+/* explore */
+.explore {
+    background-image: url(../images/palms.jpg);
+    padding-top: 127px;
+    padding-bottom: 1000px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.explore-title {
+    color: var(--blue-background, #010A20);
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 45px;
+}
+
+.explore-list {
+    display: flex;
+    justify-content: center;
+    gap: 31px;
+}
