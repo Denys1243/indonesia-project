@@ -1,26 +1,81 @@
 /* explore */
 .explore {
-    background-image: url(../images/palms.jpg);
-    padding-top: 127px;
-    padding-bottom: 1000px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+  background-image: url(../images/palms.jpg);
+  padding-top: 25px;
+  padding-bottom: 239px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-.explore-title {
-    color: var(--blue-background, #010A20);
+  @media screen and (min-width: 1200px) {
+    padding-top: 127px;
+    padding-bottom: 886px;
+  }
+
+  &__title {
+    color: var(--blue-background, #010a20);
     text-align: center;
     font-family: DM Sans;
-    font-size: 50px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 700;
-    line-height: 150%;
-    margin-bottom: 45px;
-}
+    margin-bottom: 23px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 46px;
+    width: 314px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    outline: solid red 2px;
 
-.explore-list {
+    @media screen and (min-width: 1200px) {
+      width: 615px;
+      font-size: 50px;
+      margin-bottom: 45px;
+      line-height: 150%;
+    }
+  }
+
+  &__list {
     display: flex;
     justify-content: center;
     gap: 31px;
+  }
+
+  &__item:not(:last-child) {
+    @media screen and (max-width: 1200px) {
+        display: none; 
+    }
+  }
+
+  &__foto {
+    width: 314px;
+    border-radius: 10px;
+
+    @media screen and (min-width: 1200px) {
+      width: 405px;
+      margin-bottom: 28px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  &__button:nth-child(4) &__btn {
+    background-color: red;
+    width: 60px;
+    border-radius: 35%;
+  }
+
+  &__btn {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    border: none;
+  }
 }
