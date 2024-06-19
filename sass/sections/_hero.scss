@@ -17,12 +17,16 @@
     &__title {
         color: #FFF;
         font-family: Roboto;
-        font-size: 58px;
+        font-size: 40px;
         font-style: normal;
         font-weight: 900;
         line-height: 63px;
         text-transform: uppercase;
         max-width: 627px;
+        @media screen and (min-width: 375px) {
+          font-size: 58px;
+           }
+
         @media screen and (min-width: 1200px) {
             font-size: 120px;
             line-height: 130px;
@@ -116,7 +120,7 @@
     }
     
     &__item {
-        width: 314px;
+        max-width: 314px;
         margin-bottom: 30px;
     
         @media screen and (min-width: 1200px) {

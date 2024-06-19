@@ -142,12 +142,17 @@ button:hover {
 .hero__title {
   color: #FFF;
   font-family: Roboto;
-  font-size: 58px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 900;
   line-height: 63px;
   text-transform: uppercase;
   max-width: 627px;
+}
+@media screen and (min-width: 375px) {
+  .hero__title {
+    font-size: 58px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -231,7 +236,7 @@ button:hover {
   }
 }
 .hero__item {
-  width: 314px;
+  max-width: 314px;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
@@ -394,7 +399,7 @@ button:hover {
   margin-left: auto;
   margin-right: auto;
   line-height: 46px;
-  width: 314px;
+  max-width: 314px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -487,7 +492,7 @@ button:hover {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.5px;
-  width: 314px;
+  max-width: 314px;
   margin-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
@@ -554,43 +559,64 @@ button:hover {
 .hills {
   background-image: url(../images/hill1.png), url(../images/hill2.png);
   background-position: left right;
-  padding-top: 249px;
-  padding-bottom: 256px;
+  padding-top: 171px;
+  padding-bottom: 116px;
 }
-
-.hills-title {
+@media screen and (min-width: 1200px) {
+  .hills {
+    padding-top: 249px;
+    padding-bottom: 256px;
+  }
+}
+.hills__title {
   color: #000;
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
   font-family: DM Sans;
-  font-size: 42px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 700;
-  line-height: 50px;
-  margin-bottom: 32px;
-  width: 614px;
+  line-height: 46px;
+  margin-bottom: 36px;
+  max-width: 314px;
   margin-left: auto;
   margin-right: auto;
 }
-
-.hills-text {
-  color: var(--paragraph-dark, #6F7787);
+@media screen and (min-width: 1200px) {
+  .hills__title {
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    max-width: 614px;
+    margin-bottom: 32px;
+  }
+}
+.hills__text {
+  color: var(--paragraph-dark, #6f7787);
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
   font-family: DM Sans;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px;
-  /* 155.556% */
+  line-height: 24px;
   letter-spacing: 0.5px;
-  width: 470px;
+  max-width: 314px;
   margin-left: auto;
   margin-right: auto;
 }
-
-.hills-btn {
-  color: var(--neutral-white, #FFF);
+@media screen and (min-width: 1200px) {
+  .hills__text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    max-width: 470px;
+  }
+}
+.hills__btn {
+  color: var(--neutral-white, #fff);
   text-align: center;
   font-family: DM Sans;
   font-size: 18px;
@@ -598,16 +624,24 @@ button:hover {
   font-weight: 700;
   line-height: 150%;
   border-radius: 122px;
-  background: #DD2242;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  background: #dd2242;
+  padding-left: 108px;
+  padding-right: 108px;
+  padding-top: 23px;
+  padding-bottom: 23px;
   border: none;
   margin-left: auto;
   margin-right: auto;
   display: block;
   margin-top: 36px;
+}
+@media screen and (min-width: 1200px) {
+  .hills__btn {
+    padding-left: 56px;
+    padding-right: 56px;
+    padding-top: 18.5px;
+    padding-bottom: 18.5px;
+  }
 }
 
 /* galery */
