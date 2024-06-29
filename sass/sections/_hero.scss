@@ -1,144 +1,141 @@
 /* section-hero */
 
 .hero {
-    padding-top: 153px;
-    background-image: url(../images/hero-backround.jpg);
-    background-size: cover;
+  padding-top: 153px;
+  background-image: url(../images/hero-backround.jpg);
+  background-size: cover;
+  @media screen and (min-width: 1200px) {
+    padding-top: 266px;
+  }
+
+  &__container {
     @media screen and (min-width: 1200px) {
-       padding-top: 266px;
-      }
-
-      &__container {
-        @media screen and (min-width: 1200px) {
-            padding-left: 140px;
-           }
+      padding-left: 140px;
     }
+  }
 
-    &__title {
-        color: #FFF;
-        font-family: Roboto;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: 63px;
-        text-transform: uppercase;
-        max-width: 627px;
-        @media screen and (min-width: 375px) {
-          font-size: 58px;
-           }
-
-        @media screen and (min-width: 1200px) {
-            font-size: 120px;
-            line-height: 130px;
-           }
+  &__title {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 63px;
+    text-transform: uppercase;
+    max-width: 627px;
+    @media screen and (min-width: 375px) {
+      font-size: 58px;
     }
 
-    &__button {
-        color: rgba(255, 255, 255, 0.80);
-        text-align: center;
-        font-family: DM Sans;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 150%;
-        border-radius: 211px;
-        background: var(--main-red, #DD2242);
-        padding: 20px 50px;
-        border: none;
-        display: block;
-        margin-top: 8px;
-        margin-bottom: 54px;
-    
-        @media screen and (min-width: 1200px) {
-            font-size: 20px;
-            margin-top: 21px;
-            margin-bottom: 241px;
-           }
-     
+    @media screen and (min-width: 1200px) {
+      font-size: 120px;
+      line-height: 130px;
     }
-    
-    &__number {
-        color: #DD2242;
-        font-family: Roboto;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: normal;
-        text-transform: uppercase;
+  }
+
+  &__button {
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    border-radius: 211px;
+    background: var(--main-red, #dd2242);
+    padding: 20px 50px;
+    border: none;
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 54px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 20px;
+      margin-top: 21px;
+      margin-bottom: 241px;
     }
-    
-    &__name {
-        color: #FFF;
-        font-family: DM Sans;
-        font-size: 26.409px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 41.081px;
-        margin-bottom: 4px;
-    
-        // @media screen and (min-width: 1200px) {
-        //     margin-bottom: 0px;
-        //    }
+  }
+
+  &__number {
+    color: #dd2242;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  &__name {
+    color: #fff;
+    font-family: DM Sans;
+    font-size: 26.409px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 41.081px;
+    margin-bottom: 4px;
+
+    // @media screen and (min-width: 1200px) {
+    //     margin-bottom: 0px;
+    //    }
+  }
+
+  &__text {
+    color: #939393;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+    width: 210px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 18px;
+      margin-bottom: 0;
     }
-    
-    &__text {
-        color: #939393;
-        font-feature-settings: 'clig' off, 'liga' off;
-        font-family: DM Sans;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 28px;
-        letter-spacing: 0.5px;
-        margin-bottom: 4px;
-        width: 210px;
-    
-        @media screen and (min-width: 1200px) {
-            font-size: 18px;
-            margin-bottom: 0;
-            
-           }
+  }
+
+  &__list {
+    border: 1px solid #000;
+    opacity: 0.6;
+    background: #000;
+    padding: 35px 32px;
+    display: flex;
+    flex-direction: column;
+
+    // justify-content: space-between;
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      width: 1225px;
+      padding: 40px 70px;
+      justify-content: space-between;
     }
-    
-    &__list {
-        border: 1px solid #000;
-        opacity: 0.6;
-        background: #000;
-        padding: 35px 32px;
-        display: flex;
-        flex-direction: column;
-    
-    
-        // justify-content: space-between;
-    
-        @media screen and (min-width: 1200px) {
-            flex-direction: row;
-            width: 1225px;
-            padding: 40px 70px;
-            justify-content: space-between;
-           }
+  }
+
+  &__item {
+    max-width: 314px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      width: 210px;
+      margin-bottom: 0;
+      // padding-bottom: 49px;
     }
-    
-    &__item {
-        max-width: 314px;
-        margin-bottom: 30px;
-    
-        @media screen and (min-width: 1200px) {
-            width: 210px;
-            margin-bottom: 0;
-            // padding-bottom: 49px;
-           }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      justify-content: flex-end;
     }
-    
-    &__box {
-        display: flex;
-        flex-direction: column;
-    
-        @media screen and (min-width: 1200px) {
-            flex-direction: row;
-            justify-content: flex-end;
-           }
-    }
+  }
 }
 
 

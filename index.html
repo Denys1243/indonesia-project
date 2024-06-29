@@ -66,9 +66,29 @@
             <a href="" class="header__link">gallery</a>
           </li>
         </ul>
-        <button class="header__button">
+        <!-- <button class="header__button">
           <svg><use href="./images/symbol-defs.svg#icon-menu"></use></svg>
-        </button>
+        </button> -->
+        <nav>
+            <input type="checkbox" id="toggle">
+            <label for="toggle">
+              <span></span>
+            </label>
+            <ul class="nav_menu">
+              <li class="nav_menu_item">
+                <a href="/" class="nav_menu_link">destinations</a>
+              </li>
+              <li class="nav_menu_item">
+                <a href="/" class="nav_menu_link">experiences</a>
+              </li>
+              <li class="nav_menu_item">
+                <a href="/" class="nav_menu_link">about</a>
+              </li>
+              <li class="nav_menu_item">
+                <a href="/" class="nav_menu_link">gallery</a>
+              </li>
+            </ul>
+          </nav>
       </div>
     </header>
     <!-- section hero -->
@@ -227,10 +247,10 @@
       </div>
     </section>
     <!-- section gallery -->
-    <!-- <section class="gallery">
+    <section class="gallery">
         <div class="container">
-            <h2 class="gallery-title">Live a life like you wouldn’t imagine, experience a life you wouldn’t expect.</h2>
-            <iframe width="944" height="531" src="https://www.youtube.com/embed/rBoYIDWghZc"
+            <h2 class="gallery__title">Live a life like you wouldn’t imagine, experience a life you wouldn’t expect.</h2>
+            <iframe src="https://www.youtube.com/embed/rBoYIDWghZc"
                 title="Indonesia Makes Us Feel ALIVE!" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen class="gallery-video"></iframe>
@@ -239,21 +259,21 @@
 
                 </button>
             </div>
-            <ul class="gallery-list">
-                <li class="gallery-item">
-                    <img src="./images/palm.jpg" alt="palm" class="gallery-img">
+            <ul class="gallery__list">
+                <li class="gallery__item">
+                    <img src="./images/palm.jpg" alt="palm" class="gallery__img">
                     <div>
-                        <h3 class="gallery-name">In The Country</h3>
-                        <p class="gallery-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                        <h3 class="gallery__name">In The Country</h3>
+                        <p class="gallery__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
                             dapibus
                             mauris in lectus tempus.</p>
                     </div>
                 </li>
-                <li class="gallery-item">
-                    <img src="./images/city.jpg" alt="city" class="gallery-img">
+                <li class="gallery__item">
+                    <img src="./images/city.jpg" alt="city" class="gallery__img">
                     <div>
-                        <h3 class="gallery-name">In The City</h3>
-                        <p class="gallery-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                        <h3 class="gallery__name">In The City</h3>
+                        <p class="gallery__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
                             dapibus
                             mauris in.</p>
                     </div>
@@ -261,7 +281,7 @@
             </ul>
         </div>
 
-    </section> -->
+    </section>
     <!-- section photo -->
     <!-- <section class="photo">
         <div class="container">

@@ -1,46 +1,69 @@
 /* galery */
 .gallery {
     padding-top: 140px;
-    padding-bottom: 210px;
+    padding-bottom: 0px;
     background: url(../images/palm2.jpg), lightgray 50% / cover no-repeat;
-}
 
-.gallery-title {
+    @media (min-width: 1200px) {
+        padding-top: 83px;
+        padding-bottom: 210px;
+    }
+ 
+&__title {
+    width: 314px;
     color: var(--colors-white, #FFF);
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: DM Sans;
-    font-size: 42px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 50px;
-    /* 119.048% */
-    width: 1058px;
+    font-family: DM Sans;   
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 67px;
+    font-size: 40px;
+    line-height: 46px;
+
+    @media (min-width: 1200px) {
+        width: 1058px;
+        font-size: 42px;
+        line-height: 50px;
+    }
 }
 
-.gallery-video {
+&__video {
     margin-right: auto;
     margin-left: auto;
     display: block;
-    margin-bottom: 125px;
+    margin-bottom: 40px;
+    width: 314px;
+    height: 192px;
+    margin: 0 auto; 
+
+    @media (min-width: 1200px) {
+        margin-bottom: 125px;
+        width: 944px;
+        height: 531px
+    }
 }
 
-.gallery-item {
-    width: 610px;
+&__item {
+    width: 314px;
     display: flex;
-    gap: 41px
+    flex-direction: column;
+
+
+    @media (min-width: 1200px) {
+        display: flex;
+        gap: 41px;
+        width: 610px;
+    }
 }
 
-.gallery-list {
+&__list {
     display: flex;
     justify-content: center;
     gap: 75px;
 }
 
-.gallery-name {
+&__name {
     color: var(--colors-white, #FFF);
     font-family: DM Sans;
     font-size: 18px;
@@ -50,7 +73,7 @@
     margin-bottom: 15px;
 }
 
-.gallery-info {
+&__info {
     color: var(--colors-white, #FFF);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: DM Sans;
@@ -59,4 +82,5 @@
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 0.5px;
+}
 }
