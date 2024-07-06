@@ -70,25 +70,25 @@
           <svg><use href="./images/symbol-defs.svg#icon-menu"></use></svg>
         </button> -->
         <nav>
-            <input type="checkbox" id="toggle">
-            <label for="toggle">
-              <span></span>
-            </label>
-            <ul class="nav_menu">
-              <li class="nav_menu_item">
-                <a href="/" class="nav_menu_link">destinations</a>
-              </li>
-              <li class="nav_menu_item">
-                <a href="/" class="nav_menu_link">experiences</a>
-              </li>
-              <li class="nav_menu_item">
-                <a href="/" class="nav_menu_link">about</a>
-              </li>
-              <li class="nav_menu_item">
-                <a href="/" class="nav_menu_link">gallery</a>
-              </li>
-            </ul>
-          </nav>
+          <input type="checkbox" id="toggle" />
+          <label for="toggle">
+            <span></span>
+          </label>
+          <ul class="nav_menu">
+            <li class="nav_menu_item">
+              <a href="/" class="nav_menu_link">destinations</a>
+            </li>
+            <li class="nav_menu_item">
+              <a href="/" class="nav_menu_link">experiences</a>
+            </li>
+            <li class="nav_menu_item">
+              <a href="/" class="nav_menu_link">about</a>
+            </li>
+            <li class="nav_menu_item">
+              <a href="/" class="nav_menu_link">gallery</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <!-- section hero -->
@@ -121,7 +121,23 @@
             </li>
           </ul>
 
-          <img src="./images/video.jpg" alt="video" />
+          <picture>
+            <source
+              srcset="
+                ./images/desktop/hero-video@desktop-1px.webp 1x,
+                ./images/desktop/hero-video@desktop-2px.webp 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/mobile/hero-video@mobile-1px.webp 1x,
+                ./images/mobile/hero-video@mobile-2px.webp 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img src="./images/mobile/hero-video@mobile-1px.webp" alt="video" />
+          </picture>
         </div>
       </div>
     </section>
@@ -131,7 +147,27 @@
       <div class="container">
         <ul class="articles__list">
           <li class="articles__item">
-            <img src="./images/road.jpg" alt="road" class="articles__foto" />
+            <picture>
+              <source
+                srcset="
+                  ./images/mobile/articles-mountam@mobile-1px.webp 1x,
+                  ./images/mobile/articles-mountam@mobile-2px.webp 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <source
+                srcset="
+                  ./images/desktop/articles-mountam@desktop-1px.webp 1x,
+                  ./images/desktop/articles-mountam@desktop-2px.webp 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <img
+                src="./images/mobile/articles-mountam@mobile-1px.webp"
+                alt="road"
+                class="articles__foto"
+              />
+            </picture>
             <div class="articles__box">
               <h2 class="articles__name">
                 The walkways of Indonesia spellbind
@@ -144,7 +180,15 @@
             </div>
           </li>
           <li class="articles__item">
-            <img src="./images/sea.png" alt="sea" class="articles__foto" />
+            <picture>
+              <source srcset="./images/mobile/articles-beach@mobile-1px.webp 1x, ./images/mobile/articles-beach@mobile-2px.webp 2x" media="(min-width: 320px)">
+              <source srcset="./images/desktop/articles-beach@desktop-1px.webp 1x, ./images/desktop/articles-beach@desktop-2px.webp 2x" media="(min-width: 1200px)">
+              <img
+              src="./images/mobile/articles-beach@mobile-1px.webp"
+              alt="sea"
+              class="articles__foto"
+            />
+            </picture>
             <div class="articles__box">
               <h2 class="articles__name">
                 Perfect beaches exude relaxation and fun
@@ -166,17 +210,26 @@
         <h2 class="explore__title">Explore Our Secrets</h2>
         <ul class="explore__list">
           <li class="explore__item">
-            <img src="./images/island.jpg" alt="island" class="explore__foto" />
+            <picture>
+              <source srcset="./images/desktop/explore-island@desktop-1x.webp 1x,">
+              <img src="./images/desktop/explore-island@desktop-1x.webp" alt="island" class="explore__foto" />
+            </picture>
           </li>
           <li class="explore__item">
-            <img src="./images/forest.jpg" alt="forest" class="explore__foto" />
+            <picture>
+              <source srcset="./images/desktop/explore-forest@desktop-1x.webp 1x,">
+              <img src="./images/desktop/explore-forest@desktop-1x.webp" alt="forest" class="explore__foto" />
+            </picture>
           </li>
           <li class="explore__item">
-            <img
-              src="./images/mountains.jpg"
+            <picture>
+              <source srcset="./images/desktop/explore-mountains@desktop-1x.webp 1x,">
+              <img
+              src="./images/desktop/explore-mountains@desktop-1x.webp"
               alt="mountains"
               class="explore__foto"
             />
+            </picture>
           </li>
         </ul>
         <ul class="explore__buttons">
@@ -248,39 +301,45 @@
     </section>
     <!-- section gallery -->
     <section class="gallery">
-        <div class="container">
-            <h2 class="gallery__title">Live a life like you wouldn’t imagine, experience a life you wouldn’t expect.</h2>
-            <iframe src="https://www.youtube.com/embed/rBoYIDWghZc"
-                title="Indonesia Makes Us Feel ALIVE!" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen class="gallery-video"></iframe>
-            <div class="box">
-                <button class="gallery-btn">
-
-                </button>
-            </div>
-            <ul class="gallery__list">
-                <li class="gallery__item">
-                    <img src="./images/palm.jpg" alt="palm" class="gallery__img">
-                    <div>
-                        <h3 class="gallery__name">In The Country</h3>
-                        <p class="gallery__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-                            dapibus
-                            mauris in lectus tempus.</p>
-                    </div>
-                </li>
-                <li class="gallery__item">
-                    <img src="./images/city.jpg" alt="city" class="gallery__img">
-                    <div>
-                        <h3 class="gallery__name">In The City</h3>
-                        <p class="gallery__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-                            dapibus
-                            mauris in.</p>
-                    </div>
-                </li>
-            </ul>
+      <div class="container">
+        <h2 class="gallery__title">
+          Live a life like you wouldn’t imagine, experience a life you wouldn’t
+          expect.
+        </h2>
+        <iframe
+          src="https://www.youtube.com/embed/rBoYIDWghZc"
+          title="Indonesia Makes Us Feel ALIVE!"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          class="gallery-video"
+        ></iframe>
+        <div class="box">
+          <button class="gallery-btn"></button>
         </div>
-
+        <ul class="gallery__list">
+          <li class="gallery__item">
+            <img src="./images/palm.jpg" alt="palm" class="gallery__img" />
+            <div>
+              <h3 class="gallery__name">In The Country</h3>
+              <p class="gallery__info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus dapibus mauris in lectus tempus.
+              </p>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <img src="./images/city.jpg" alt="city" class="gallery__img" />
+            <div>
+              <h3 class="gallery__name">In The City</h3>
+              <p class="gallery__info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus dapibus mauris in.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
     <!-- section photo -->
     <!-- <section class="photo">

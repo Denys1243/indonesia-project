@@ -2,10 +2,22 @@
 
 .hero {
   padding-top: 153px;
-  background-image: url(../images/hero-backround.jpg);
+  background-image: url(../../images/mobile/hero-bag@mobile-1x.webp);
   background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../../images/mobile/hero-bag@mobile-2x.webp);
+  }
+
   @media screen and (min-width: 1200px) {
     padding-top: 266px;
+    background-image: url(../../images/desktop/hero-bag@desktop-1px.webp);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../images/desktop/hero-bag@desktop-2px.webp);
+    }
   }
 
   &__container {
@@ -137,5 +149,3 @@
     }
   }
 }
-
-
