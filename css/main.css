@@ -770,7 +770,7 @@ label {
 .gallery {
   padding-top: 140px;
   padding-bottom: 0px;
-  background: url(../images/palm2.jpg), lightgray 50%/cover no-repeat;
+  background: url(../images/palm2.jpg) lightgray 50%/cover no-repeat;
 }
 @media (min-width: 1200px) {
   .gallery {
@@ -798,19 +798,44 @@ label {
   }
 }
 .gallery__video {
-  margin-right: auto;
-  margin-left: auto;
   display: block;
-  margin-bottom: 40px;
   width: 314px;
   height: 192px;
   margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 @media (min-width: 1200px) {
   .gallery__video {
-    margin-bottom: 125px;
     width: 944px;
     height: 531px;
+  }
+}
+.gallery__box {
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 40px;
+}
+@media (min-width: 1200px) {
+  .gallery__box {
+    margin-bottom: 125px;
+  }
+}
+.gallery__btn {
+  left: 148px;
+  top: 72px;
+  position: absolute;
+  padding: 27px 23px 24px 28px;
+  border: none;
+  border-radius: 50%;
+  background: var(--Action-Third, #E93A7D);
+  cursor: pointer;
+}
+@media (min-width: 1200px) {
+  .gallery__btn {
+    padding: 41px 38px 39px 42px;
+    left: 545px;
+    top: 220px;
   }
 }
 .gallery__item {
@@ -821,14 +846,39 @@ label {
 @media (min-width: 1200px) {
   .gallery__item {
     display: flex;
+    flex-direction: row;
     gap: 41px;
     width: 610px;
+  }
+}
+.gallery__img {
+  width: 314px;
+  height: 176px;
+}
+@media (min-width: 1200px) {
+  .gallery__img {
+    width: 233px;
+    height: 151px;
+  }
+}
+.gallery__div {
+  margin-top: 40px;
+}
+@media (min-width: 1200px) {
+  .gallery__div {
+    margin-top: 0;
   }
 }
 .gallery__list {
   display: flex;
   justify-content: center;
   gap: 75px;
+  flex-wrap: wrap;
+}
+@media (min-width: 1200px) {
+  .gallery__list {
+    flex-wrap: nowrap;
+  }
 }
 .gallery__name {
   color: var(--colors-white, #FFF);

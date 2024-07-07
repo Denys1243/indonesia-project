@@ -2,7 +2,7 @@
 .gallery {
     padding-top: 140px;
     padding-bottom: 0px;
-    background: url(../images/palm2.jpg), lightgray 50% / cover no-repeat;
+    background: url(../images/palm2.jpg) lightgray 50% / cover no-repeat;
 
     @media (min-width: 1200px) {
         padding-top: 83px;
@@ -29,19 +29,46 @@
 }
 
 &__video {
-    margin-right: auto;
-    margin-left: auto;
     display: block;
-    margin-bottom: 40px;
+    
     width: 314px;
     height: 192px;
     margin: 0 auto; 
+    margin-right: auto;
+    margin-left: auto;
 
     @media (min-width: 1200px) {
-        margin-bottom: 125px;
         width: 944px;
         height: 531px
     }
+}
+
+&__box {
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 40px;
+
+    @media (min-width: 1200px) {
+        margin-bottom: 125px;
+    }
+}
+
+&__btn {
+    left: 148px;
+    top: 72px;
+    position: absolute;
+    padding: 27px 23px 24px 28px;
+    border: none;
+    border-radius: 50%;
+    background: var(--Action-Third, #E93A7D);
+    cursor: pointer;
+
+    @media (min-width: 1200px) {
+        padding: 41px 38px 39px 42px;
+        left: 545px;
+        top: 220px;
+    }
+
 }
 
 &__item {
@@ -52,15 +79,41 @@
 
     @media (min-width: 1200px) {
         display: flex;
+        flex-direction: row;
         gap: 41px;
         width: 610px;
     }
+}
+
+&__img {
+    width: 314px;
+    height: 176px;
+
+
+    @media (min-width: 1200px) {
+        width: 233px;
+        height: 151px;
+    }
+}
+
+&__div {
+    margin-top: 40px;
+
+    @media (min-width: 1200px) {
+        margin-top: 0;
+    }
+
 }
 
 &__list {
     display: flex;
     justify-content: center;
     gap: 75px;
+    flex-wrap: wrap;
+
+    @media (min-width: 1200px) {
+        flex-wrap: nowrap
+    }
 }
 
 &__name {
