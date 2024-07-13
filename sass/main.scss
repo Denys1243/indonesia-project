@@ -1,6 +1,6 @@
-@import "./sections/modal";
 @import "./base/reset";
 @import "./base/common";
+@import "./base/variables";
 @import "./sections/header";
 @import "./sections/hero";
 @import "./sections/articles";
@@ -11,3 +11,4 @@
 @import "./sections/photo";
 @import "./sections/navigation";
 @import "./sections/footer";
+@import "./sections/modal";
