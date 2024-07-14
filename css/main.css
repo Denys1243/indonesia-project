@@ -226,23 +226,23 @@ label {
 /* section-hero */
 .hero {
   padding-top: 153px;
-  background-image: url(../../images/mobile/hero-bag@mobile-1x.webp);
+  background-image: url(../images/mobile/hero-bag@mobile-1x.webp);
   background-size: cover;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../../images/mobile/hero-bag@mobile-2x.webp);
+    background-image: url(../images/mobile/hero-bag@mobile-2x.webp);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 266px;
-    background-image: url(../../images/desktop/hero-bag@desktop-1px.webp);
+    background-image: url(../images/desktop/hero-bag@desktop-1px.webp);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../../images/desktop/hero-bag@desktop-2px.webp);
+    background-image: url(../images/desktop/hero-bag@desktop-2px.webp);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -905,6 +905,12 @@ label {
   padding-top: 177px;
   padding-bottom: 229px;
 }
+@media screen and (min-width: 1200px) {
+  .photo {
+    padding-top: 32px;
+    padding-bottom: 40px;
+  }
+}
 .photo__title {
   color: #010A20;
   text-align: center;
@@ -918,57 +924,120 @@ label {
 @media screen and (min-width: 1200px) {
   .photo__title {
     font-size: 60px;
-    margin-bottom: 42px;
+    margin-bottom: 41.83px;
     line-height: 150%;
-  }
-}
-.photo__list {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 30px;
-  height: 480px;
-  width: 314px;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media screen and (min-width: 1200px) {
-  .photo__list {
-    height: 770px;
-    width: 1170px;
-    flex-direction: column;
   }
 }
 .photo__text {
   color: #6F7787;
   text-align: center;
   font-family: DM Sans;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
   /* 155.556% */
   letter-spacing: 0.18px;
-  width: 511px;
+  width: 314px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 71px;
+  margin-bottom: 34px;
+}
+@media screen and (min-width: 1200px) {
+  .photo__text {
+    width: 511px;
+    margin-bottom: 71px;
+    font-size: 18px;
+  }
+}
+.photo__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  height: 480px;
+  width: 314px;
+  margin: 0 auto;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .photo__list {
+    gap: 30px;
+    height: 770px;
+    width: 1170px;
+    flex-direction: column;
+  }
 }
 .photo__item:first-child, .photo__item:nth-child(4) {
   width: 151px;
   height: 217px;
 }
+@media screen and (min-width: 1200px) {
+  .photo__item:first-child, .photo__item:nth-child(4) {
+    width: 370px;
+    height: 530px;
+  }
+}
+.photo__item:nth-child(4) {
+  order: 4;
+}
+@media screen and (min-width: 1200px) {
+  .photo__item:nth-child(4) {
+    order: 5;
+  }
+}
 .photo__item:nth-child(2), .photo__item:nth-child(3) {
   width: 151px;
   height: 86px;
+}
+@media screen and (min-width: 1200px) {
+  .photo__item:nth-child(2), .photo__item:nth-child(3) {
+    width: 370px;
+    height: 210px;
+  }
 }
 .photo__item:nth-child(5), .photo__item:last-child {
   width: 150px;
   height: 153px;
 }
+@media screen and (min-width: 1200px) {
+  .photo__item:nth-child(5), .photo__item:last-child {
+    width: 370px;
+    height: 370px;
+  }
+}
+.photo__item:nth-child(2) {
+  order: 3;
+}
+@media screen and (min-width: 1200px) {
+  .photo__item:nth-child(2) {
+    order: 2;
+  }
+}
+.photo__item:nth-child(5) {
+  order: 3;
+}
+@media screen and (min-width: 1200px) {
+  .photo__item:nth-child(5) {
+    order: 5;
+  }
+}
+.photo__item:nth-child(3) {
+  order: 4;
+}
+@media screen and (min-width: 1200px) {
+  .photo__item:nth-child(3) {
+    order: 2;
+  }
+}
+.photo__item:last-child {
+  order: 6;
+}
 .photo__image {
   height: 100%;
   width: 100%;
+  border-radius: 10px;
 }
 
 /* nav */
