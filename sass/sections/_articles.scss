@@ -5,13 +5,13 @@
       rgba(1, 10, 32, 1) 0%,
       rgba(1, 10, 32, 0) 100%
     ),
-    url(../../images/mobile/articles-beach@mobile-1px.webp);
+    url(../images/mobile/articles-beach@mobile-1px.webp);
   background-size: cover;
   padding: 40px 0px 48px 0px;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../../images/mobile/articles-beach@mobile-2px.webp);
+    background-image: url(../images/mobile/articles-beach@mobile-2px.webp);
   }
 
   @media screen and (min-width: 1200px) {
@@ -20,7 +20,7 @@
         rgba(1, 10, 32, 1) 0%,
         rgba(1, 10, 32, 0) 100%
       ),
-      url(../../images/desktop/articles-beach@desktop-1px.webp);
+      url(../images/desktop/articles-beach@desktop-1px.webp);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -29,7 +29,7 @@
           rgba(1, 10, 32, 1) 0%,
           rgba(1, 10, 32, 0) 100%
         ),
-        url(../../images/desktop/articles-beach@desktop-2px.webp);
+        url(../images/desktop/articles-beach@desktop-2px.webp);
     }
     padding-top: 207px;
     padding-bottom: 305px;
